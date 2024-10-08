@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="all_tables.text_index_translations=true,update_synch=true" audit="true" db_object_id="9f65e4438320021000d5ccc0deaad3df" extends="sys_metadata" label="UI Script" max_length="40" name="sys_ui_script" read_roles="ui_script_admin" text_index="true" type="collection">
-        <element label="global" max_length="40" name="x_snc_devtools_global" type="boolean"/>
+    <element attributes="all_tables.text_index_translations=true,update_synch=true" audit="true" db_object_id="745439423323021074eca3134d5c7b14" extends="sys_metadata" label="UI Script" max_length="40" name="sys_ui_script" read_roles="ui_script_admin" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="global" max_length="40" name="x_snc_devtools_global" type="boolean"/>
     </element>
 </database>

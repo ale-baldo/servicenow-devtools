@@ -6,7 +6,9 @@
         <caller_access/>
         <client_callable>false</client_callable>
         <description>Returns the DevTools link directory with many useful links for admins and developers.</description>
+        <mobile_callable>false</mobile_callable>
         <name>GetLinkDirectory</name>
+        <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[function GetLinkDirectory()
 {
 	var linkdirectory =
@@ -59,12 +61,6 @@
 					table: 'sys_plugins'
 				},				
 				{
-					table: 'sys_store_app'
-				},				
-				{
-					table: 'sys_app_version'
-				},					
-				{
 					table: 'sys_metadata'
 				},
 				{
@@ -75,12 +71,9 @@
 				},
 				{
 					table: 'sys_remote_update_set'
-				},
-				{
-					table: 'x_snc_devtools_shared_application'
 				}
 			],
-			'System Properties':
+			'Configuration':
 			[
 				{
 					table: 'sys_properties'
@@ -92,18 +85,6 @@
 					table: 'sys_properties_category_m2m'
 				}
 			],
-			'Connections and Credentials':
-			[
-				{
-					table: 'discovery_credentials'
-				},
-				{
-					table: 'sys_connection'
-				},
-				{
-					table: 'sys_alias'
-				}
-			],			
 			'User Preferences':
 			[
 				{
@@ -182,6 +163,15 @@
 					table: 'user_multifactor_auth'
 				}
 			],			
+			'Record Transporter':
+			[
+				{
+					table: 'x_snc_devtools_transporter_package'
+				},
+				{
+					table: 'x_snc_devtools_transporter_record'
+				}
+			],
 			'Server Scripts':
 			[
 				{
@@ -222,12 +212,6 @@
 				},
 				{
 					table: 'sys_ws_query_parameter'
-				}
-			],
-			'Processors':
-			[
-				{
-					table: 'sys_processor'
 				}
 			],
 			'Events and Notifications':
@@ -327,15 +311,6 @@
 					table: 'sys_app_module'
 				}
 			],
-			'Polaris Navigation':
-			[
-				{
-					table: 'sys_polaris_menu_config'
-				},
-				{
-					table: 'sys_polaris_configurable_menu_item'
-				}
-			],			
 			'UI Pages':
 			[
 				{
@@ -504,15 +479,6 @@
 					table: 'sp_widget'
 				}
 			],
-			'Record Transporter':
-			[
-				{
-					table: 'x_snc_devtools_transporter_package'
-				},
-				{
-					table: 'x_snc_devtools_transporter_record'
-				}
-			],			
 			'Attachments':
 			[
 				{
@@ -597,16 +563,6 @@
 					table: 'cmdb_rel_type'
 				}				
 			],
-			'CMDB CI ServiceNow Apps':
-			[
-				{
-					table: 'x_snc_devtools_cmdb_ci_appl_servicenow'
-				},
-				{
-					table: 'cmdb_rel_ci',
-					query: 'parent.sys_class_name=x_snc_devtools_cmdb_ci_appl_servicenow'
-				}
-			],				
 			'Contract Management':
 			[
 				{
@@ -1001,13 +957,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-10-19 17:03:37</sys_created_on>
         <sys_id>a8582ae11b5774d0edf3642aab4bcb86</sys_id>
-        <sys_mod_count>132</sys_mod_count>
+        <sys_mod_count>123</sys_mod_count>
         <sys_name>GetLinkDirectory</sys_name>
         <sys_package display_value="DevTools" source="x_snc_devtools">d689f6901bd38450a89720a8ec4bcbfd</sys_package>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="DevTools">d689f6901bd38450a89720a8ec4bcbfd</sys_scope>
         <sys_update_name>sys_script_include_a8582ae11b5774d0edf3642aab4bcb86</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-09 06:50:40</sys_updated_on>
+        <sys_updated_on>2024-02-20 10:47:38</sys_updated_on>
     </sys_script_include>
 </record_update>

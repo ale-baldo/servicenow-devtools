@@ -4,7 +4,7 @@
         <disabled>ignore</disabled>
         <field>style</field>
         <field_message/>
-        <field_message_type/>
+        <field_message_type>none</field_message_type>
         <mandatory>ignore</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -21,8 +21,7 @@
         <table>content_css</table>
         <ui_policy display_value="content_css type">e043f4dfdb121510f359c1911596190a</ui_policy>
         <value/>
-        <value_action/>
+        <value_action>ignore</value_action>
         <visible>true</visible>
     </sys_ui_policy_action>
-    <sys_translated_text action="delete_multiple" query="documentkey=d805bc13db521510f359c19115961944"/>
 </record_update>

@@ -2,7 +2,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="name" table="x_snc_devtools_test">
         <active>true</active>
         <array>false</array>
-        <attributes>serializer=com.glide.script.TranslatedTextXMLSerializer</attributes>
+        <attributes>edge_encryption_enabled=true,serializer=com.glide.script.TranslatedTextXMLSerializer</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
